@@ -10,7 +10,8 @@ botao.addEventListener("click", function (evento) {
         montarTr(paciente);
         formulario.reset();
         mensagem.textContent = "";
-    }else{ 
+    }
+    else {
         mensagem.textContent = "Dados inválidos";
     }
 
@@ -31,7 +32,7 @@ function montarTr(paciente) {
     table.appendChild(tr);
 }
 
-function montarTd(valor, classe ) {
+function montarTd(valor, classe) {
     let td = document.createElement("td");
     td.textContent = valor;
     td.classList.add(classe);
@@ -52,5 +53,3 @@ function carregarPaciente(form) {
 
     return paciente;
 }
-
-
